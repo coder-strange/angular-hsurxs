@@ -1,4 +1,57 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<!-- <ci-header></ci-header> -->
+
+<!-- <app-ag-grid></app-ag-grid> -->
+<!-- <p-sidebar [(visible)]="showSidebar">
+  <p-fieldset legend="Selections" [toggleable]="true">
+
+    <div class="p-grid">
+      <div class="p-col-fixed"  style="width:45px;padding-top:27px;border-right: 1px dotted grey; margin-top: 7px;">
+
+        <p-checkbox [(ngModel)]="value" binary="true" name="allSelected" label="ALL"></p-checkbox>
+
+      </div>
+
+      <div class="p-col">
+        <p-multiSelect [defaultLabel]="'GSL'" [options]="gslList" [style]="{ width : '100%' }" [(ngModel)]="selectedGsl"  optionLabel="name"></p-multiSelect>
+      
+        <p-multiSelect [defaultLabel]="'Country'" [options]="contriesList" [style]="{ width : '100%' }" [(ngModel)]="selectedCountry" optionLabel="name"></p-multiSelect>
+
+      </div>
+
+    </div>
+
+   
+
+  </p-fieldset>
+  <hr />
+  <p-accordion>
+    <p-accordionTab header="Complete">
+      <div class="ui-inputgroup">
+          <span class="ui-inputgroup-addon"><i class="fa fa-search"></i></span>
+          <input type="text" style="width: 198px;" [(ngModel)]="completeSearchFilter" (change)="applyFilter($event)" pInputText placeholder="Search">         
+      </div>
+      <p-breadcrumb *ngIf="completeBreadCrum[0]" [model]="completeBreadCrum"></p-breadcrumb>
+      <p-slideMenu #slideMenuRef id="completedSlide" [menuWidth]="225" [viewportHeight]="300" [model]="filteredItems">
+      </p-slideMenu>
+    </p-accordionTab>
+    <p-accordionTab header="In Process">
+      <p-breadcrumb *ngIf="inProcessBreadCrum[0]" [model]="inProcessBreadCrum"></p-breadcrumb>
+      <p-slideMenu [menuWidth]="225" id="inProcessSlide" [viewportHeight]="300" [model]="items"></p-slideMenu>
+    </p-accordionTab>
+    <p-accordionTab header="Archived">
+      <p-breadcrumb *ngIf="archivedBreadCrum[0]" [model]="archivedBreadCrum"></p-breadcrumb>
+      <p-slideMenu [menuWidth]="225" id="archivedSlide" [viewportHeight]="300" [model]="items"></p-slideMenu>
+    </p-accordionTab>
+  </p-accordion>
+</p-sidebar> -->
+
+
+<!-- <div (click)="showSidebar = !showSidebar"> -->
+  <!-- <img src="/assets/images/dashboard.JPG" style="width: 100%;height: 100%;"> -->
+<div>
+    <!-- <p-tree [value]="folderStructure"  selectionMode="single"  ></p-tree> -->
+  <p-tree [value]="folderStructure"  selectionMode="single"  ></p-tree>
+
+</div>
+
+<!-- </div> -->
